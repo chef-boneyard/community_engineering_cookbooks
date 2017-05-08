@@ -1,0 +1,10 @@
+{
+  "id": "thom",
+  "ssh_keys": [
+  "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBtsQdoV3W0TwFm7BgSzJDR/IjgSyhFsf89Xm+juP69+ thom@remtmay02"
+  ],
+  "groups": ["wheel"],
+  "uid": 9001,
+  "shell": "/bin/zsh",
+  "comment": "Thom May"
+}
