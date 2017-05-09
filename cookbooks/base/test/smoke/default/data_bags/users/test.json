@@ -1,0 +1,10 @@
+{
+  "id": "test",
+  "ssh_keys": [
+  "ssh-ed25519 oxdecafbad"
+  ],
+  "groups": ["wheel", "systemd-journal"],
+  "uid": 9001,
+  "shell": "/bin/zsh",
+  "comment": "a test user"
+}

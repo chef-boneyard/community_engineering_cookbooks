@@ -3,7 +3,7 @@
   "ssh_keys": [
   "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDu2IhNRhycRCrVb8V9yPIK2S8U4o5k/j87a25gt0HIlp4HkrA324vUioneE0i9A4Vs1d3Cu08ckRth16cFFF0CWLCSrqPQUfCAeHxLNVxNv6MZ1FksOFGrprDBaXkCdAR8YQVdiy5+hY7tgli7CQkN/dHAP+nF08ife6ZRB/IRuXt5aZxlcRsAsZ0td4v11j5e0FdGCiqY8F8MZaYdoKL4xzUIzZMbE7K2lof+so+XMIaWYZ2UZmJnSZgg6kiGXU3jZ1wn5cJnu6hFQi9zownXEoXm4xKPvKJhxC3DTv7yhGkYTWVW3c8jkJRrTh0qiJreNbxShcA4m6lUoFie2+vBbICHDXdud5qBVagjqR0/9yCuB06FjHdesOTfuSBrNUgmEOgFGn3+1NyUCRbs/QLZKI5+OGRhQnXQwZGqeK4Hg5+S/h2YU4oYBfafYK/k4FyvXHw3/1vtz7w3U0FqGdJrvrpB6QGF6j6/Kqez0DRa+MPWsC0BkIrdABYr55nzi+JOae/Mo97ebuZRTHl7EXQ4JEblj07fTwa81e8ktlHb1ocppK6Akn3J+I79Fkk+99+PMpiWBAZGb8odbrHDW42Ljdr+uEpit+lQX7D32xNYOq7EH18iDvTo/dyxiD2uRynQE8Gw+oEWNlLQnjO8i1pvqhVeUQIE4EylO64KO8OuRw== rkidd@remrkidd01"
   ],
-  "groups": ["wheel"],
+  "groups": ["wheel", "systemd-journal"],
   "uid": 9002,
   "shell": "/bin/zsh",
   "comment": "Robb Kidd"

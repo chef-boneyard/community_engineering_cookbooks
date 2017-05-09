@@ -1,5 +1,5 @@
 {
-  "revision_id": "8e378beaaa818bdab37a1c0e704d61dd81091673ad230619644a2cb70c269b29",
+  "revision_id": "876f0566e0eae4e955d8ab5097121f4d43826c8db3a5deccbb57d399fe58be1d",
   "name": "dcob",
   "run_list": [
     "recipe[base::default]",
@@ -8,18 +8,18 @@
   "cookbook_locks": {
     "base": {
       "version": "0.1.0",
-      "identifier": "3a0907435141a5bffda174c87ea7d75110f6ed21",
-      "dotted_decimal_identifier": "16335475448037797.54040590442593959.236743176940833",
+      "identifier": "2e1d423aac3bbd1e2867931a4dc6c406802755cb",
+      "dotted_decimal_identifier": "12980019218103229.8488674616036806.215532198909387",
       "source": "../cookbooks/base",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
-        "remote": null,
-        "revision": null,
+        "remote": "https://github.com/chef/community_engineering_cookbooks.git",
+        "revision": "13d152f28205fc52320c0266e92044443b9eab43",
         "working_tree_clean": false,
-        "published": false,
+        "published": true,
         "synchronized_remote_branches": [
-
+          "origin/master"
         ]
       },
       "source_options": {
@@ -28,18 +28,18 @@
     },
     "dcob": {
       "version": "0.1.0",
-      "identifier": "3a95d19ea40a32ef63e6dbdeba974cd7a872c7ee",
-      "dotted_decimal_identifier": "16490276191472178.67382362616281751.84489127774190",
+      "identifier": "b4b928623ea253e59f8c23a639873db45af67099",
+      "dotted_decimal_identifier": "50869078906020435.64633193909074311.67844829507737",
       "source": "../cookbooks/dcob",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
-        "remote": null,
-        "revision": null,
+        "remote": "https://github.com/chef/community_engineering_cookbooks.git",
+        "revision": "13d152f28205fc52320c0266e92044443b9eab43",
         "working_tree_clean": false,
-        "published": false,
+        "published": true,
         "synchronized_remote_branches": [
-
+          "origin/master"
         ]
       },
       "source_options": {
@@ -58,14 +58,14 @@
       }
     },
     "chef-client": {
-      "version": "8.0.1",
-      "identifier": "b6a49c5a92082beb0f0af0da2785e5b9b64b4acc",
-      "dotted_decimal_identifier": "51409437202712619.66163159191922565.252585790098124",
-      "cache_key": "chef-client-8.0.1-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/chef-client/versions/8.0.1/download",
+      "version": "8.0.2",
+      "identifier": "11265ae243f4603e419f691cf939bb36f4e644bf",
+      "dotted_decimal_identifier": "4827246389097568.17523601475172665.205844711359679",
+      "cache_key": "chef-client-8.0.2-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/chef-client/versions/8.0.2/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/chef-client/versions/8.0.1/download",
-        "version": "8.0.1"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/chef-client/versions/8.0.2/download",
+        "version": "8.0.2"
       }
     },
     "users": {
@@ -77,6 +77,17 @@
       "source_options": {
         "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/users/versions/5.0.0/download",
         "version": "5.0.0"
+      }
+    },
+    "sudo": {
+      "version": "3.4.0",
+      "identifier": "aa11979fb381713c0bee2c945ba6f43b0420ad63",
+      "dotted_decimal_identifier": "47870088957886833.16901616180681638.268534309498211",
+      "cache_key": "sudo-3.4.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/sudo/versions/3.4.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/sudo/versions/3.4.0/download",
+        "version": "3.4.0"
       }
     },
     "habitat": {
@@ -135,14 +146,14 @@
       }
     },
     "ohai": {
-      "version": "5.0.4",
-      "identifier": "b52c7887be1384fdc82b784b4802fc66fe3c1f58",
-      "dotted_decimal_identifier": "50995866969707396.71433258135144450.277519282216792",
-      "cache_key": "ohai-5.0.4-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/ohai/versions/5.0.4/download",
+      "version": "5.1.0",
+      "identifier": "0c8f2906d48ae976d03d6eb6c3f39534ea62d795",
+      "dotted_decimal_identifier": "3535106091551465.33443009520911347.164054503184277",
+      "cache_key": "ohai-5.1.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/ohai/versions/5.1.0/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/ohai/versions/5.0.4/download",
-        "version": "5.0.4"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/ohai/versions/5.1.0/download",
+        "version": "5.1.0"
       }
     }
   },
@@ -168,11 +179,15 @@
       ],
       [
         "chef-client",
-        "= 8.0.1"
+        "= 8.0.2"
       ],
       [
         "users",
         "= 5.0.0"
+      ],
+      [
+        "sudo",
+        "= 3.4.0"
       ],
       [
         "habitat",
@@ -196,7 +211,7 @@
       ],
       [
         "ohai",
-        "= 5.0.4"
+        "= 5.1.0"
       ]
     ],
     "dependencies": {
@@ -212,6 +227,10 @@
         [
           "users",
           ">= 0.0.0"
+        ],
+        [
+          "sudo",
+          ">= 0.0.0"
         ]
       ],
       "dcob (0.1.0)": [
@@ -226,10 +245,10 @@
           ">= 12.16.3"
         ]
       ],
-      "chef-client (8.0.1)": [
+      "chef-client (8.0.2)": [
         [
           "cron",
-          ">= 1.7.0"
+          ">= 2.0.0"
         ],
         [
           "logrotate",
@@ -237,10 +256,13 @@
         ],
         [
           "windows",
-          ">= 1.42.0"
+          ">= 2.0.0"
         ]
       ],
       "users (5.0.0)": [
+
+      ],
+      "sudo (3.4.0)": [
 
       ],
       "habitat (0.4.0)": [
@@ -267,7 +289,7 @@
           ">= 4.0.0"
         ]
       ],
-      "ohai (5.0.4)": [
+      "ohai (5.1.0)": [
 
       ]
     }

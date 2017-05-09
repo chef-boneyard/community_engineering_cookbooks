@@ -11,6 +11,7 @@ driver:
 
 provisioner:
   name: policyfile_zero
+  data_bags_path: test/smoke/default/data_bags
 
 ## require_chef_omnibus specifies a specific chef version to install. You can
 ## also set this to `true` to always use the latest version.

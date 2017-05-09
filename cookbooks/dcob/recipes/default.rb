@@ -7,7 +7,10 @@
 user 'hab' do
   system true
 end
-hab_install 'me'
+
+hab_install 'me' do
+  action :upgrade
+end
 
 hab_package 'chef_community_engineering/dcob'
 
@@ -15,6 +18,6 @@ hab_sup 'me'
 
 hab_service 'chef_community_engineering/dcob' do
   action %i( load start )
-  strategy 'rolling'
-  config_from '/var/habitat/configs'
+  strategy 'at-once'
+  service_group node.policy_group
 end
