@@ -15,9 +15,9 @@ default_source :supermarket
 # run_list: chef-client will run these recipes in the order specified.
 run_list "base::default", "ce_prometheus::default"
 
-cookbook "prometheus", git: "https://github.com/thommay/chef-prometheus", branch: "tm/native_accumulators"
+cookbook "prometheus", git: "https://github.com/elijah/chef-prometheus"
 # Specify a custom source for a single cookbook:
 # cookbook "example_cookbook", path: "../cookbooks/example_cookbook"
 
-default["prometheus"]["version"] = '1.6.1'
-default['prometheus']['checksum'] = '07f466ad23848c7dd740e722355d25ae1d24584d6574a8f10542d1da13368d2f'
+default["prometheus"]["version"] = '1.7.0'
+default['prometheus']['checksum'] = '96bebf4fbebbaf9d39dbe76787374e7e9cae21b903394cd7a4e3c7790cec7a9a'

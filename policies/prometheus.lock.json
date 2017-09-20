@@ -1,127 +1,52 @@
 {
-  "revision_id": "065823f9d16923389d5c661cac7e558f78994129a88a9b4951f36f1fc41c2783",
+  "revision_id": "3ea0462cb1b717c61cb61a8fd0adb7aa02c0613da543041678b222153a467a82",
   "name": "prometheus",
   "run_list": [
     "recipe[base::default]",
     "recipe[ce_prometheus::default]"
   ],
   "cookbook_locks": {
-    "prometheus": {
-      "version": "0.6.3",
-      "identifier": "46a82aab0a63ba108fcea04e4ff5913760a8431b",
-      "dotted_decimal_identifier": "19888149581423546.4661717242892277.159667030868763",
-      "cache_key": "prometheus-fb8076a6fb854e51d698403744c9d2f332c331ce",
-      "origin": "https://github.com/thommay/chef-prometheus",
+    "apt": {
+      "version": "3.0.0",
+      "identifier": "ac1a47456c19b9b278abed0ac5e51b05d27f2082",
+      "dotted_decimal_identifier": "48442589403945401.50235225666143717.29711820333186",
+      "cache_key": "apt-3.0.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/apt/versions/3.0.0/download",
       "source_options": {
-        "git": "https://github.com/thommay/chef-prometheus",
-        "revision": "fb8076a6fb854e51d698403744c9d2f332c331ce",
-        "branch": "tm/native_accumulators"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/apt/versions/3.0.0/download",
+        "version": "3.0.0"
+      }
+    },
+    "ark": {
+      "version": "3.1.0",
+      "identifier": "263bdd4cc6c4958b9966df223059f531c3ace7fb",
+      "dotted_decimal_identifier": "10761870776910997.39293688872054873.269594085091323",
+      "cache_key": "ark-3.1.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/ark/versions/3.1.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/ark/versions/3.1.0/download",
+        "version": "3.1.0"
       }
     },
     "base": {
       "version": "0.1.0",
-      "identifier": "3a0907435141a5bffda174c87ea7d75110f6ed21",
-      "dotted_decimal_identifier": "16335475448037797.54040590442593959.236743176940833",
+      "identifier": "2e1d423aac3bbd1e2867931a4dc6c406802755cb",
+      "dotted_decimal_identifier": "12980019218103229.8488674616036806.215532198909387",
       "source": "../cookbooks/base",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
-        "remote": null,
-        "revision": null,
+        "remote": "https://github.com/chef/community_engineering_cookbooks.git",
+        "revision": "d34e2c8a0ce0eecd53bc2a83580907ecc0787b72",
         "working_tree_clean": false,
-        "published": false,
+        "published": true,
         "synchronized_remote_branches": [
-
+          "origin/HEAD -> origin/master",
+          "origin/master"
         ]
       },
       "source_options": {
         "path": "../cookbooks/base"
-      }
-    },
-    "ce_prometheus": {
-      "version": "0.1.0",
-      "identifier": "143eddfbd1da104185a79be5e0265e9876dfff35",
-      "dotted_decimal_identifier": "5698622667741712.18442828407758886.104008922431285",
-      "source": "../cookbooks/ce_prometheus",
-      "cache_key": null,
-      "scm_info": {
-        "scm": "git",
-        "remote": null,
-        "revision": null,
-        "working_tree_clean": false,
-        "published": false,
-        "synchronized_remote_branches": [
-
-        ]
-      },
-      "source_options": {
-        "path": "../cookbooks/ce_prometheus"
-      }
-    },
-    "chef_client_updater": {
-      "version": "1.0.2",
-      "identifier": "650d42804723d8ebf7436cc8f9e1a0bafa02deca",
-      "dotted_decimal_identifier": "28443551918924760.66418488486984161.176724918853322",
-      "cache_key": "chef_client_updater-1.0.2-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/chef_client_updater/versions/1.0.2/download",
-      "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/chef_client_updater/versions/1.0.2/download",
-        "version": "1.0.2"
-      }
-    },
-    "chef-client": {
-      "version": "8.0.2",
-      "identifier": "11265ae243f4603e419f691cf939bb36f4e644bf",
-      "dotted_decimal_identifier": "4827246389097568.17523601475172665.205844711359679",
-      "cache_key": "chef-client-8.0.2-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/chef-client/versions/8.0.2/download",
-      "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/chef-client/versions/8.0.2/download",
-        "version": "8.0.2"
-      }
-    },
-    "users": {
-      "version": "5.0.0",
-      "identifier": "b272a0d60960ea23a147e0b3074c6d37bb84b4c0",
-      "dotted_decimal_identifier": "50228580965769450.10028954269452108.120086136665280",
-      "cache_key": "users-5.0.0-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/users/versions/5.0.0/download",
-      "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/users/versions/5.0.0/download",
-        "version": "5.0.0"
-      }
-    },
-    "yum": {
-      "version": "5.0.1",
-      "identifier": "33e596545789984a0b83bf5821941be3771d342f",
-      "dotted_decimal_identifier": "14607657635121560.20841808755433876.30663769928751",
-      "cache_key": "yum-5.0.1-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/yum/versions/5.0.1/download",
-      "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/yum/versions/5.0.1/download",
-        "version": "5.0.1"
-      }
-    },
-    "build-essential": {
-      "version": "8.0.1",
-      "identifier": "e4d034503ffe239ea6e30ee3110334de95855550",
-      "dotted_decimal_identifier": "64405217793277475.44656540457832707.58130595927376",
-      "cache_key": "build-essential-8.0.1-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/build-essential/versions/8.0.1/download",
-      "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/build-essential/versions/8.0.1/download",
-        "version": "8.0.1"
-      }
-    },
-    "runit": {
-      "version": "1.8.0",
-      "identifier": "8cbc91d902452eea539443eefb5a69a2a55121dc",
-      "dotted_decimal_identifier": "39613831336576302.65957040810294106.116147279176156",
-      "cache_key": "runit-1.8.0-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/runit/versions/1.8.0/download",
-      "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/runit/versions/1.8.0/download",
-        "version": "1.8.0"
       }
     },
     "bluepill": {
@@ -135,26 +60,58 @@
         "version": "2.4.3"
       }
     },
-    "ark": {
-      "version": "3.0.0",
-      "identifier": "f5de50b49372fbe6649099e1860500a67a79d6d4",
-      "dotted_decimal_identifier": "69205807502422779.64849816863213061.715019376340",
-      "cache_key": "ark-3.0.0-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/ark/versions/3.0.0/download",
+    "build-essential": {
+      "version": "8.0.3",
+      "identifier": "dfc29e7a0586933293e233bc74048fadae0e3ca1",
+      "dotted_decimal_identifier": "62982905714280083.14236348575413252.157976112282785",
+      "cache_key": "build-essential-8.0.3-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/build-essential/versions/8.0.3/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/ark/versions/3.0.0/download",
-        "version": "3.0.0"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/build-essential/versions/8.0.3/download",
+        "version": "8.0.3"
       }
     },
-    "golang": {
-      "version": "1.7.0",
-      "identifier": "21bcc92ed2aa576049d2e633eb31cea0ea3e987c",
-      "dotted_decimal_identifier": "9496246491458135.27102767918345009.227190520060028",
-      "cache_key": "golang-1.7.0-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/golang/versions/1.7.0/download",
+    "ce_prometheus": {
+      "version": "0.1.0",
+      "identifier": "143eddfbd1da104185a79be5e0265e9876dfff35",
+      "dotted_decimal_identifier": "5698622667741712.18442828407758886.104008922431285",
+      "source": "../cookbooks/ce_prometheus",
+      "cache_key": null,
+      "scm_info": {
+        "scm": "git",
+        "remote": "https://github.com/chef/community_engineering_cookbooks.git",
+        "revision": "d34e2c8a0ce0eecd53bc2a83580907ecc0787b72",
+        "working_tree_clean": false,
+        "published": true,
+        "synchronized_remote_branches": [
+          "origin/HEAD -> origin/master",
+          "origin/master"
+        ]
+      },
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/golang/versions/1.7.0/download",
-        "version": "1.7.0"
+        "path": "../cookbooks/ce_prometheus"
+      }
+    },
+    "chef-client": {
+      "version": "8.1.8",
+      "identifier": "faaca509f91f9611fb01e691a09fd44ffc62f1e1",
+      "dotted_decimal_identifier": "70558569014566806.5061060185923743.233440001847777",
+      "cache_key": "chef-client-8.1.8-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/chef-client/versions/8.1.8/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/chef-client/versions/8.1.8/download",
+        "version": "8.1.8"
+      }
+    },
+    "chef_client_updater": {
+      "version": "3.0.4",
+      "identifier": "6cb356b481d8c300757d19c86627e7b0035296e0",
+      "dotted_decimal_identifier": "30596482461718723.129180163925543.254743156004576",
+      "cache_key": "chef_client_updater-3.0.4-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/chef_client_updater/versions/3.0.4/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/chef_client_updater/versions/3.0.4/download",
+        "version": "3.0.4"
       }
     },
     "compat_resource": {
@@ -168,37 +125,37 @@
         "version": "12.19.0"
       }
     },
-    "rsyslog": {
-      "version": "6.0.1",
-      "identifier": "2e8210ffff9f2815f2d1fc54e26264b3a701a536",
-      "dotted_decimal_identifier": "13090858454720296.6177958206431842.110722763826486",
-      "cache_key": "rsyslog-6.0.1-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/rsyslog/versions/6.0.1/download",
+    "cron": {
+      "version": "4.1.3",
+      "identifier": "da677c4a81defa5e17bd0c01d65a638a13ae13b6",
+      "dotted_decimal_identifier": "61475328446553850.26484748528506458.109444686812086",
+      "cache_key": "cron-4.1.3-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/cron/versions/4.1.3/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/rsyslog/versions/6.0.1/download",
-        "version": "6.0.1"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/cron/versions/4.1.3/download",
+        "version": "4.1.3"
       }
     },
-    "windows": {
-      "version": "3.0.5",
-      "identifier": "470450a54f82c38a4b84254ada98c2d47288333b",
-      "dotted_decimal_identifier": "19989467763802819.38926577719499416.214217710383931",
-      "cache_key": "windows-3.0.5-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/3.0.5/download",
+    "golang": {
+      "version": "1.7.0",
+      "identifier": "21bcc92ed2aa576049d2e633eb31cea0ea3e987c",
+      "dotted_decimal_identifier": "9496246491458135.27102767918345009.227190520060028",
+      "cache_key": "golang-1.7.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/golang/versions/1.7.0/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/3.0.5/download",
-        "version": "3.0.5"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/golang/versions/1.7.0/download",
+        "version": "1.7.0"
       }
     },
-    "seven_zip": {
-      "version": "2.0.2",
-      "identifier": "8e6795446cfa8e0a4a09cef4d5d35eb2d522a24d",
-      "dotted_decimal_identifier": "40083337488693902.2896155754419667.104122173006413",
-      "cache_key": "seven_zip-2.0.2-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/seven_zip/versions/2.0.2/download",
+    "logrotate": {
+      "version": "2.2.0",
+      "identifier": "53e09234a4f73cc13f46d833d2e5075cafddfaa8",
+      "dotted_decimal_identifier": "23609341620057916.54394244012692197.8094668946088",
+      "cache_key": "logrotate-2.2.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/logrotate/versions/2.2.0/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/seven_zip/versions/2.0.2/download",
-        "version": "2.0.2"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/logrotate/versions/2.2.0/download",
+        "version": "2.2.0"
       }
     },
     "mingw": {
@@ -212,6 +169,17 @@
         "version": "2.0.1"
       }
     },
+    "ohai": {
+      "version": "5.2.0",
+      "identifier": "31667e457ea2295ec2c43d24708b5b3edaea387e",
+      "dotted_decimal_identifier": "13904966376661545.26672795905978507.100325518882942",
+      "cache_key": "ohai-5.2.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/ohai/versions/5.2.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/ohai/versions/5.2.0/download",
+        "version": "5.2.0"
+      }
+    },
     "packagecloud": {
       "version": "0.3.0",
       "identifier": "f74a9f0b1a23f58b6856d01a6a086c25b85eb041",
@@ -223,55 +191,110 @@
         "version": "0.3.0"
       }
     },
+    "prometheus": {
+      "version": "0.6.3",
+      "identifier": "1f9ad5402126fa4f62279333ad358d27b4af8fff",
+      "dotted_decimal_identifier": "8895964972656378.22344445273025845.155201674645503",
+      "cache_key": "prometheus-faababdf3154f68b9afd683b7529266c013e777b",
+      "origin": "https://github.com/elijah/chef-prometheus",
+      "source_options": {
+        "git": "https://github.com/elijah/chef-prometheus",
+        "revision": "faababdf3154f68b9afd683b7529266c013e777b"
+      }
+    },
+    "rsyslog": {
+      "version": "6.0.2",
+      "identifier": "c4a7088cbd4e6a2f80c3ff8d313e7f90fa2e91a2",
+      "dotted_decimal_identifier": "55352750598082154.13370903199822142.140260649374114",
+      "cache_key": "rsyslog-6.0.2-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/rsyslog/versions/6.0.2/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/rsyslog/versions/6.0.2/download",
+        "version": "6.0.2"
+      }
+    },
+    "runit": {
+      "version": "1.8.0",
+      "identifier": "8cbc91d902452eea539443eefb5a69a2a55121dc",
+      "dotted_decimal_identifier": "39613831336576302.65957040810294106.116147279176156",
+      "cache_key": "runit-1.8.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/runit/versions/1.8.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/runit/versions/1.8.0/download",
+        "version": "1.8.0"
+      }
+    },
+    "seven_zip": {
+      "version": "2.0.2",
+      "identifier": "8e6795446cfa8e0a4a09cef4d5d35eb2d522a24d",
+      "dotted_decimal_identifier": "40083337488693902.2896155754419667.104122173006413",
+      "cache_key": "seven_zip-2.0.2-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/seven_zip/versions/2.0.2/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/seven_zip/versions/2.0.2/download",
+        "version": "2.0.2"
+      }
+    },
+    "sudo": {
+      "version": "3.5.3",
+      "identifier": "19ad30c724ec2b76082809c0b769a268a4a92661",
+      "dotted_decimal_identifier": "7227299428887595.33223015307196265.178570322847329",
+      "cache_key": "sudo-3.5.3-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/sudo/versions/3.5.3/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/sudo/versions/3.5.3/download",
+        "version": "3.5.3"
+      }
+    },
+    "users": {
+      "version": "5.1.0",
+      "identifier": "dbee861ed7f9e07251a03e3033422aecf57db77c",
+      "dotted_decimal_identifier": "61905279710132704.32177896024978242.47197219305340",
+      "cache_key": "users-5.1.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/users/versions/5.1.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/users/versions/5.1.0/download",
+        "version": "5.1.0"
+      }
+    },
+    "windows": {
+      "version": "3.1.2",
+      "identifier": "1c8c2df7aa03da3dee366639782d81652d8c820c",
+      "dotted_decimal_identifier": "8035428404429786.17431890990037037.142271555863052",
+      "cache_key": "windows-3.1.2-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/3.1.2/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/3.1.2/download",
+        "version": "3.1.2"
+      }
+    },
+    "yum": {
+      "version": "5.0.1",
+      "identifier": "33e596545789984a0b83bf5821941be3771d342f",
+      "dotted_decimal_identifier": "14607657635121560.20841808755433876.30663769928751",
+      "cache_key": "yum-5.0.1-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/yum/versions/5.0.1/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/yum/versions/5.0.1/download",
+        "version": "5.0.1"
+      }
+    },
     "yum-epel": {
-      "version": "2.1.1",
-      "identifier": "f70f93b0f7533c1261a89b1ab18f7a4eb15b36c9",
-      "dotted_decimal_identifier": "69541446251139900.5173926365409679.134478401582793",
-      "cache_key": "yum-epel-2.1.1-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/yum-epel/versions/2.1.1/download",
+      "version": "2.1.2",
+      "identifier": "6504e255f7675b5afca49df1c83cda6d998eab76",
+      "dotted_decimal_identifier": "28434342799173467.25610531858663484.240164262554486",
+      "cache_key": "yum-epel-2.1.2-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/yum-epel/versions/2.1.2/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/yum-epel/versions/2.1.1/download",
-        "version": "2.1.1"
-      }
-    },
-    "cron": {
-      "version": "4.1.1",
-      "identifier": "138644f4e4012e7ba5fba02ca5972946b104daff",
-      "dotted_decimal_identifier": "5495655281983790.34803922278065559.45383594334975",
-      "cache_key": "cron-4.1.1-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/cron/versions/4.1.1/download",
-      "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/cron/versions/4.1.1/download",
-        "version": "4.1.1"
-      }
-    },
-    "logrotate": {
-      "version": "2.1.0",
-      "identifier": "44e1eed59ca6edd3b261f4015366fc4384f4f362",
-      "dotted_decimal_identifier": "19388714318604013.59587353861247846.277366923653986",
-      "cache_key": "logrotate-2.1.0-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/logrotate/versions/2.1.0/download",
-      "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/logrotate/versions/2.1.0/download",
-        "version": "2.1.0"
-      }
-    },
-    "ohai": {
-      "version": "5.0.4",
-      "identifier": "b52c7887be1384fdc82b784b4802fc66fe3c1f58",
-      "dotted_decimal_identifier": "50995866969707396.71433258135144450.277519282216792",
-      "cache_key": "ohai-5.0.4-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/ohai/versions/5.0.4/download",
-      "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/ohai/versions/5.0.4/download",
-        "version": "5.0.4"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/yum-epel/versions/2.1.2/download",
+        "version": "2.1.2"
       }
     }
   },
   "default_attributes": {
     "prometheus": {
-      "version": "1.6.1",
-      "checksum": "07f466ad23848c7dd740e722355d25ae1d24584d6574a8f10542d1da13368d2f"
+      "version": "1.7.0",
+      "checksum": "96bebf4fbebbaf9d39dbe76787374e7e9cae21b903394cd7a4e3c7790cec7a9a"
     }
   },
   "override_attributes": {
@@ -280,95 +303,120 @@
   "solution_dependencies": {
     "Policyfile": [
       [
-        "prometheus",
-        ">= 0.0.0"
+        "apt",
+        "= 3.0.0"
+      ],
+      [
+        "ark",
+        "= 3.1.0"
       ],
       [
         "base",
         "= 0.1.0"
       ],
       [
-        "ce_prometheus",
-        "= 0.1.0"
-      ],
-      [
-        "chef_client_updater",
-        "= 1.0.2"
-      ],
-      [
-        "chef-client",
-        "= 8.0.2"
-      ],
-      [
-        "users",
-        "= 5.0.0"
-      ],
-      [
-        "yum",
-        "= 5.0.1"
-      ],
-      [
-        "build-essential",
-        "= 8.0.1"
-      ],
-      [
-        "runit",
-        "= 1.8.0"
-      ],
-      [
         "bluepill",
         "= 2.4.3"
       ],
       [
-        "ark",
-        "= 3.0.0"
+        "build-essential",
+        "= 8.0.3"
       ],
       [
-        "golang",
-        "= 1.7.0"
+        "ce_prometheus",
+        "= 0.1.0"
+      ],
+      [
+        "chef-client",
+        "= 8.1.8"
+      ],
+      [
+        "chef_client_updater",
+        "= 3.0.4"
       ],
       [
         "compat_resource",
         "= 12.19.0"
       ],
       [
-        "rsyslog",
-        "= 6.0.1"
+        "cron",
+        "= 4.1.3"
       ],
       [
-        "windows",
-        "= 3.0.5"
+        "golang",
+        "= 1.7.0"
       ],
       [
-        "seven_zip",
-        "= 2.0.2"
+        "logrotate",
+        "= 2.2.0"
       ],
       [
         "mingw",
         "= 2.0.1"
       ],
       [
+        "ohai",
+        "= 5.2.0"
+      ],
+      [
         "packagecloud",
         "= 0.3.0"
       ],
       [
+        "prometheus",
+        ">= 0.0.0"
+      ],
+      [
+        "rsyslog",
+        "= 6.0.2"
+      ],
+      [
+        "runit",
+        "= 1.8.0"
+      ],
+      [
+        "seven_zip",
+        "= 2.0.2"
+      ],
+      [
+        "sudo",
+        "= 3.5.3"
+      ],
+      [
+        "users",
+        "= 5.1.0"
+      ],
+      [
+        "windows",
+        "= 3.1.2"
+      ],
+      [
+        "yum",
+        "= 5.0.1"
+      ],
+      [
         "yum-epel",
-        "= 2.1.1"
-      ],
-      [
-        "cron",
-        "= 4.1.1"
-      ],
-      [
-        "logrotate",
-        "= 2.1.0"
-      ],
-      [
-        "ohai",
-        "= 5.0.4"
+        "= 2.1.2"
       ]
     ],
     "dependencies": {
+      "apt (3.0.0)": [
+
+      ],
+      "ark (3.1.0)": [
+        [
+          "build-essential",
+          ">= 0.0.0"
+        ],
+        [
+          "windows",
+          ">= 0.0.0"
+        ],
+        [
+          "seven_zip",
+          ">= 0.0.0"
+        ]
+      ],
       "base (0.1.0)": [
         [
           "chef_client_updater",
@@ -381,6 +429,26 @@
         [
           "users",
           ">= 0.0.0"
+        ],
+        [
+          "sudo",
+          ">= 0.0.0"
+        ]
+      ],
+      "bluepill (2.4.3)": [
+        [
+          "rsyslog",
+          ">= 2.0.0"
+        ]
+      ],
+      "build-essential (8.0.3)": [
+        [
+          "seven_zip",
+          ">= 0.0.0"
+        ],
+        [
+          "mingw",
+          ">= 1.1.0"
         ]
       ],
       "ce_prometheus (0.1.0)": [
@@ -389,43 +457,7 @@
           ">= 0.0.0"
         ]
       ],
-      "prometheus (0.6.3)": [
-        [
-          "yum",
-          ">= 0.0.0"
-        ],
-        [
-          "build-essential",
-          ">= 0.0.0"
-        ],
-        [
-          "runit",
-          "~> 1.5"
-        ],
-        [
-          "bluepill",
-          "~> 2.3"
-        ],
-        [
-          "ark",
-          ">= 0.0.0"
-        ],
-        [
-          "golang",
-          ">= 0.0.0"
-        ],
-        [
-          "compat_resource",
-          ">= 0.0.0"
-        ]
-      ],
-      "chef_client_updater (1.0.2)": [
-        [
-          "compat_resource",
-          ">= 12.16.3"
-        ]
-      ],
-      "chef-client (8.0.2)": [
+      "chef-client (8.1.8)": [
         [
           "cron",
           ">= 2.0.0"
@@ -439,21 +471,72 @@
           ">= 2.0.0"
         ]
       ],
-      "users (5.0.0)": [
+      "chef_client_updater (3.0.4)": [
 
       ],
-      "yum (5.0.1)": [
+      "compat_resource (12.19.0)": [
 
       ],
-      "build-essential (8.0.1)": [
+      "cron (4.1.3)": [
+        [
+          "compat_resource",
+          ">= 0.0.0"
+        ]
+      ],
+      "golang (1.7.0)": [
+
+      ],
+      "logrotate (2.2.0)": [
+
+      ],
+      "mingw (2.0.1)": [
         [
           "seven_zip",
           ">= 0.0.0"
+        ]
+      ],
+      "ohai (5.2.0)": [
+
+      ],
+      "packagecloud (0.3.0)": [
+
+      ],
+      "prometheus (0.6.3)": [
+        [
+          "apt",
+          "= 3.0.0"
         ],
         [
-          "mingw",
-          ">= 1.1.0"
+          "yum",
+          ">= 0.0.0"
+        ],
+        [
+          "build-essential",
+          ">= 0.0.0"
+        ],
+        [
+          "runit",
+          "~> 1.5"
+        ],
+        [
+          "ark",
+          ">= 0.0.0"
+        ],
+        [
+          "golang",
+          ">= 0.0.0"
+        ],
+        [
+          "compat_resource",
+          ">= 0.0.0"
+        ],
+        [
+          "bluepill",
+          "~> 2.3"
         ]
+      ],
+      "rsyslog (6.0.2)": [
+
       ],
       "runit (1.8.0)": [
         [
@@ -465,76 +548,32 @@
           ">= 0.0.0"
         ]
       ],
-      "bluepill (2.4.3)": [
-        [
-          "rsyslog",
-          ">= 2.0.0"
-        ]
-      ],
-      "ark (3.0.0)": [
-        [
-          "build-essential",
-          ">= 0.0.0"
-        ],
-        [
-          "windows",
-          ">= 0.0.0"
-        ],
-        [
-          "seven_zip",
-          ">= 0.0.0"
-        ]
-      ],
-      "golang (1.7.0)": [
-
-      ],
-      "compat_resource (12.19.0)": [
-
-      ],
-      "rsyslog (6.0.1)": [
-
-      ],
-      "windows (3.0.5)": [
-        [
-          "ohai",
-          ">= 4.0.0"
-        ]
-      ],
       "seven_zip (2.0.2)": [
         [
           "windows",
           ">= 1.2.2"
         ]
       ],
-      "mingw (2.0.1)": [
-        [
-          "seven_zip",
-          ">= 0.0.0"
-        ]
-      ],
-      "packagecloud (0.3.0)": [
+      "sudo (3.5.3)": [
 
       ],
-      "yum-epel (2.1.1)": [
+      "users (5.1.0)": [
+
+      ],
+      "windows (3.1.2)": [
+        [
+          "ohai",
+          ">= 4.0.0"
+        ]
+      ],
+      "yum (5.0.1)": [
+
+      ],
+      "yum-epel (2.1.2)": [
         [
           "compat_resource",
           ">= 12.16.3"
         ]
-      ],
-      "cron (4.1.1)": [
-        [
-          "compat_resource",
-          ">= 0.0.0"
-        ]
-      ],
-      "logrotate (2.1.0)": [
-        [
-          "compat_resource",
-          ">= 0.0.0"
-        ]
-      ],
-      "ohai (5.0.4)": [
-
       ]
     }
   }

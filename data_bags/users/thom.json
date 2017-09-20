@@ -1,7 +1,8 @@
 {
   "id": "thom",
   "ssh_keys": [
-  "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBtsQdoV3W0TwFm7BgSzJDR/IjgSyhFsf89Xm+juP69+ thom@remtmay02"
+  "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBtsQdoV3W0TwFm7BgSzJDR/IjgSyhFsf89Xm+juP69+ thom@remtmay02",
+  "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIN/yuxSgCa7LhIBhKdM+Yk0iDxuBwnjc5eYQuK1yrFfB thom@UNKNOWN"
   ],
   "groups": ["wheel", "systemd-journal"],
   "uid": 9001,

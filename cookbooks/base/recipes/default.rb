@@ -4,9 +4,8 @@ node.default['chef_client']['systemd']['timer'] = true
 
 include_recipe 'chef-client::systemd_service'
 
-chef_client_updater 'current' do
-  channel 'current'
-  version '13.1.6'
+chef_client_updater 'stable' do
+  channel 'stable'
 end
 
 users_manage 'wheel' do

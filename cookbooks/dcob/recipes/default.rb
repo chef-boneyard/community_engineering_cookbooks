@@ -12,9 +12,9 @@ hab_install 'me' do
   action :upgrade
 end
 
-hab_package 'chef_community_engineering/dcob'
-
 hab_sup 'me'
+
+hab_package 'chef_community_engineering/dcob'
 
 hab_service 'chef_community_engineering/dcob' do
   action %i( load start )
