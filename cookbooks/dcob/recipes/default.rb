@@ -20,4 +20,5 @@ hab_service 'chef_community_engineering/dcob' do
   action %i( load start )
   strategy 'at-once'
   service_group node.policy_group
+  channel node.policy_group == 'production' ? 'stable' : 'unstable'
 end
