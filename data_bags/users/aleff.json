@@ -1,11 +1,5 @@
 {
   "id": "aleff",
-  "ssh_keys": [
-      "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC+/lxdK/yfkVLp92DVJ0Wq/auwb7JOQfoX2pv6z6ScWaVi7KrNx6cdVKor3wBYE3i3v8OTy6ad/r4EwYtvFl5FBh9o/teUIVGp0i8hx/G4agYucEHlXsk6jLJmbi+kHJmlV+oeSNYFQrZNMG2UEi6WGHwPCcgiof6O/689Uq0WCazYkx0hBdhpi+TUjdBhoVkDnuFXw2EpYn6TMPorDRaxX0E/cAkF7ProjxZO9FNKuF8aCsevQ7ym86lKOrCvO82g3uXqk+vlLUXneTwe3iHde0yRenVxipGJTKjqk8W4M/zAui585M0a5UiWMmLnKmcTOWGja4WMobPSZHKXhsGX aleff@chef.io",
-      "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGCgFV4u4TT+yzU6c5/+okBXtm+qAQoc1O024kkVEUpv aleff@chef.io"
-  ],
-  "groups": ["wheel", "systemd-journal"],
-  "uid": 9003,
-  "shell": "/bin/zsh",
-  "comment": "Adam Leff"
+  "action": "remove",
+  "groups": ["wheel", "systemd-journal"]
 }
