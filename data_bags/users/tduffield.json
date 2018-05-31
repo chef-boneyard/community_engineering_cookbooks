@@ -1,0 +1,10 @@
+{
+  "id": "tduffield",
+  "ssh_keys": [
+  "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDjPQfHD5B141UhTlYGs1gC1in21pOjFNa6qG+ln8FAdPobMB4KJL+xp4Jqc+5XdwSXRZ2uL6g5lVDLLZvRBK8Vs7c6+DnHo7FAdJ6jQ3VqROWeDYpI9d98DbHUYso2PFS9qBBLkkGTzXLP5qgk4zqmJbnqJ3XNxoFaloETikPlTeGJUJdn6952ZIXT6ryYG4i1hIn70hPS3B+DOJZJfKk7MJlknY65KeY39nlS8SJQ8UepeYIIR2+Rwe9FBYXrl/zyTAyBHkxz/PrBLXpZa7bLLXq5/sKopKxTTvrJUjo/WuZBnMcyw1pATBYN390XHH5ijsqGdTlGderXkXnhIMUUhvv+2j/9or8AZ6IGsG90jO6UzQaRPurJ6ecrBlSJHU1Hld+pyngUobN3j6nD8cmrl8HyYEtd08UPanb3HJNkE8nJmPdemVSZ9eC/2pbEedol/jgawkwPFtWtHe4u16LgvRTnEk7Aw35NB67aEKHG1bQgLA6eYnN8XAgtYqEloMDuIEl0m/G8KS5/0EpqNfeSq2+L7YeD9z6uDXSEPf9UY+lAICk9ugYenaat0mU+0waBsA7I5yjPsoU3gWrUc6hRZZ1cAbcv3x7I3CfmkDmgjClp19JWXKBapSukJPi+E22xpaAYACIexGcImtKqTr1WMzu6s3fW1jZCU9D88U7lUw== tom@chef.io"
+  ],
+  "groups": ["wheel", "systemd-journal"],
+  "uid": 9004,
+  "shell": "/bin/zsh",
+  "comment": "Tom Duffield"
+}
